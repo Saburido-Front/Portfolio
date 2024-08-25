@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'minha-fonte';
+    src: url(../fonts/mango_shake/Mango\ Shake.otf);
+}
+
+@font-face {
+    font-family: 'convite';
+    src: url(../fonts/intensa_fuente/Intensa\ Fuente.ttf);
+}
+
+/* Estilos Globais */
+body {
+    background: rgb(0,223,255);
+    background: linear-gradient(90deg, rgba(0,223,255,1) 0%, rgba(10,159,255,1) 19%, rgba(0,134,255,1) 49%, rgba(15,18,65,1) 50%, rgba(0,9,121,1) 87%, rgba(3,14,147,1) 92%);
+}
+
+/* Caixa de Login */
+.box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 600px;
+    background: linear-gradient(90deg, rgba(0,61,158,1) 0%, rgba(4,106,200,1) 41%, rgba(75,147,255,1) 49%, rgba(255,255,255,1) 50%);
+    border-radius: 15px;
+    box-shadow: 
+        0px 54px 55px rgba(0, 0, 0, 0.25),
+        0px -12px 30px rgba(0, 0, 0, 0.12),
+        0px 4px 6px rgba(0, 0, 0, 0.12),
+        0px 12px 13px rgba(0, 0, 0, 0.17),
+        0px -3px 5px rgba(0, 0, 0, 0.09);
+}
+
+/* Inputs e Placeholders */
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 25vh 0 0 5vh;
+}
+
+.inputs input {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.inputs ::placeholder {
+    font-size: 18px;
+    color: white;
+}
+
+/* Imagens */
+.astronauta img, .planets img, .lua img, .balao img{
+    position: absolute;
+    filter: drop-shadow(2px 2px 2px);
+}
+.astronauta img {
+    top: 25px;
+    left: 370px;
+    height: 190px;
+}
+
+.planets img {
+    top: 170px;
+    left: 950px;
+    width: 610px;
+    height: 620px;
+}
+
+.lua img {
+    top: 30px;
+    left: 240px;
+    height: 80px;
+}
+
+.balao img {
+    position: absolute;
+    top: -27px;
+    left: 490px;
+    width: 430px;
+    height: 200px;
+}
+
+/* Botão de Envio */
+.enviar {
+    position: absolute;
+    top: 530px;
+    left: 75px;
+}
+
+.enviar button {
+    background: transparent;
+    width: 150px;
+    height: 35px;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.enviar button:hover {
+    background-color: aliceblue;
+    color: rgb(3, 78, 78);
+    transition-duration: 0.5s;
+}
+
+/* Mensagem */
+.Mensagem p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 110px;
+    left: 117px;
+    width: 350px;
+    height: 55px;
+    font-size: 40px;
+    font-family: 'minha-fonte';
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+/* Link de Redirecionamento */
+.redirect {
+    position: absolute;
+    top: 76vh;
+    left: 56vh;
+    font-size: 20px;
+    color: white;
+}
+
+.redirect a {
+    color: rgb(0, 217, 255);
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+}
+
+.redirect a:hover {
+    color: white;
+    transition-duration: 0.5s;
+}
+
+/* Texto dentro do balão */
+.balao p {
+    position: absolute;
+    top: 10px;
+    left: 570px;
+    font-size: 35px;
+    font-family: 'convite';
+    color: darkblue;
+}
+
+/* Responsividade para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    .box {
+        width: 95%;
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .inputs {
+        top: 25%;
+        left: 5%;
+        width: 90%;
+    }
+
+    .inputs input {
+        font-size: 4vw;
+    }
+
+    .inputs ::placeholder {
+        font-size: 4vw;
+    }
+
+    .Mensagem p {
+        font-size: 5vw;
+        left: 5%;
+        width: 90%;
+    }
+
+    .astronauta img {
+        width: 20%;
+        left: 5%;
+    }
+
+    .planets img {
+        width: 50%;
+        top: 35%;
+        right: 0;
+    }
+
+    .lua img {
+        width: 10%;
+        left: 5%;
+    }
+
+    .balao img {
+        width: 50%;
+        left: 25%;
+    }
+
+    .enviar {
+        left: 5%;
+    }
+
+    .enviar button {
+        width: 100%;
+        height: 8vh;
+        font-size: 4vw;
+    }
+
+    .redirect {
+        right: 5%;
+        font-size: 3vw;
+    }
+}
