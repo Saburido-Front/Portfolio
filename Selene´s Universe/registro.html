@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre-se</title>
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="video/0831(1).mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat culpa, vel quos ex ad obcaecati incidunt et eveniet officiis numquam asperiores labore ipsam dicta blanditiis, facere reprehenderit nulla dolores a. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex earum odio tenetur cumque, totam rerum provident quae deserunt facere itaque iusto aperiam laudantium ea dolorum sed minus expedita necessitatibus nulla.</p>
+        <img src="img/pngegg.png">
+        <h1>Selene´s Universe</h1>
+        <form id="formulario">
+            <div class="inputs">
+                <p>Registre-se</p>
+                <input type="text" name="usuario" id="usuario" placeholder="Usuário" maxlength="15" minlength="1">
+                <input type="password" name="senha" id="senha" placeholder="Senha" maxlength="8" min="1" required>
+                <input type="password" name="confsenha" id="confsenha" placeholder="Confirme sua Senha" maxlength="8" min="1" required>
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="email" name="confemail" id="confemail" placeholder="Confirme seu E-mail">
+                <button type="submit">Enviar</button>
+            </div>
+            <p id="error" class="error-message"></p>
+            <p id="errorpass" class="error-messagepasswrd"></p>
+        </form>
+    </div>
+    <script src="js/registro.js"></script>
+</body>
+</html>

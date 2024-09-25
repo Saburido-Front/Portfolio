@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <script src="js/login.js"></script>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="video/0831(1).mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- Caixa de Login -->
+
+    <div class="box">
+        <footer>
+            <div class="footer"> 
+             <a href="#">Suporte</a>
+             <a href="#">Contato</a>
+             <a href="#">Sobre</a>
+             <a href="#">Discord</a>
+            </div>
+        </footer>
+        <img src="img/pngegg.png">
+        <h1>Selene´s Universe</h1>
+        <div class="inputs">
+            <p>Faça Login</p>
+            <input type="text" name="usuario" id="usuario" placeholder="Usuário" maxlength="15" minlength="1">
+            <p></p>
+            <input type="password" name="senha" id="senha" placeholder="Senha" maxlength="8" min="1" onfocus="showToggle()" onblur="hideToggle()">
+            <span class="toggle-password" onclick="togglePassword()">Mostrar</span>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox">
+            <div class="submit">
+                <input type="submit" value="Enviar" onclick="logar()">
+                <a href="registro.html">Registre-se</a>
+            </div>
+            <p>Manter Login</p>
+        </div>
+    </div>
+    <div class="icons">
+        <p>Ou Entre pelo E-mail</p>
+        <a href="#" class="facebook"><img src="img/facebook.png"></a>
+        <a href="#" class="outlook"><img src="img/outlook.png"></a>
+        <a href="#" class="gmail"><img src="img/google (1).png"></a>     
+        <script src="js/login.js"></script>
+        
+</body>
+</html>
